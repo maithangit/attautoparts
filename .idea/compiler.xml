@@ -6,11 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="attautopart" />
         <module name="attautoparts" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="attautoparts" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>

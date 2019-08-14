@@ -11,7 +11,5 @@ public class ShoppingCartUtils {
         if (session != null && session.getAttribute("shoppingCart") != null)
             return (ShoppingCart) session.getAttribute("shoppingCart");
         return null;
-
-
     }
 }

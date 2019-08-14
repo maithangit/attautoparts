@@ -7,6 +7,6 @@
 <title>home</title>
 </head>
 <body>
-	<jsp:forward page="/product"></jsp:forward>
+	<jsp:forward page="product"></jsp:forward>
 </body>
 </html>

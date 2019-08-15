@@ -69,3 +69,7 @@ div.card > a > img {
 .width100{
     width: 100px;
 }
+
+.product-image {
+    width: 100%;
+}

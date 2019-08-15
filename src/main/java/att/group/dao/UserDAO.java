@@ -17,7 +17,7 @@ public class UserDAO {
         usersDB = new HashMap<>();
         usersDB.put("Tam", new User(1, "Tam", "123456", "Vinh Tam Tan", "vtan@mum.edu", "2000 N. Court St., Fairfield, Iowa", "(641) 233 - 9000"));
         usersDB.put("Thang", new User(2, "Thang","123456", "Mai Thang", "mthang@mum.edu", "301 Main St., Fairfield, Iowa", "(641) 656 - 8008"));
-        usersDB.put("Alican", new User(3, "alicanozer","123456", "", "aozer@mum.edu", "1000 N. 4th St., Fairfield, Iowa", "(973) 953 - 2078"));
+        usersDB.put("alicanozer", new User(3, "alicanozer","123456", "Alican Ozer", "aozer@mum.edu", "1000 N. 4th St., 52557, Fairfield, Iowa", "(973) 953 - 2078"));
 
     }
 

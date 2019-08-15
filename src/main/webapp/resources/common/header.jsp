@@ -37,9 +37,6 @@
                     <a class="nav-link" href="home">Home     </a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="product">Product</a>
-                </li>
-                <li class="nav-item active">
                     <!--<a href="shopping-cart" class="list-group-item d-flex justify-content-between align-items-center">-->
                     <a class="nav-link" href="shopping-cart" >
                         <span>

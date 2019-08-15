@@ -15,7 +15,11 @@
                     <h4 class="card-title">
                         <a href="productdetails?id=${product.productId}"><span id="item_${product.productId}">${product.productName}</span></a>
                     </h4>
-                    <h5>$${product.price}</h5>
+                    <h5>$${product.price}
+                        <c:if test="${product.originalPrice != null}">
+                            <span class="old-price">$${product.originalPrice}</span>
+                        </c:if>
+                    </h5> <h6 class="old-price"></h6>
                     <p class="card-text">${product.briefInformation}</p>
                 </div>
                 <div class="card-footer text-center">
@@ -38,7 +42,11 @@
                     <h4 class="card-title">
                         <a href="productdetails?id=${product.productId}"><span id="item_${product.productId}">${product.productName}</span></a>
                     </h4>
-                    <h5>$${product.price}</h5>
+                    <h5>$${product.price}
+                        <c:if test="${product.originalPrice != null}">
+                            <span class="old-price">$${product.originalPrice}</span>
+                        </c:if>
+                    </h5>
                     <p class="card-text">${product.briefInformation}</p>
                 </div>
                 <div class="card-footer text-center">

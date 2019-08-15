@@ -17,7 +17,7 @@ $(function () {
             .done(function (data) {
                 var resp = JSON.parse(data);
                 if (resp.userName === "") {
-                    toastr["error"]("This username is exists.");
+                    toastr["error"]("Username is required.");
                     $("#password").val("");
                 } else {
                     $(location).attr("href", "profile");

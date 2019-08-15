@@ -24,7 +24,8 @@ public class MockData {
                 "How to test a car battery<br />" +
                 "How to replace your car battery<br />" +
                 "Order your Autocraft car battery replacement today. Enjoy reliable starting power with no maintenance every season. ");
-        p1.setPrice(375.0);
+        p1.setPrice(275.0);
+        p1.setoriginalPrice(375.0);
         p1.setProductId(1001);
         p1.setImages(Arrays.asList(new Image("001_autocraft_gold_800cca.jpg"), new Image("001_autocraft_gold_800cca.jpg") ));
 
@@ -111,6 +112,7 @@ public class MockData {
                 "Legal for on road use<br />" +
                 "Lights dim over time, replace in pairs for optimal performance");
         p5.setPrice(94.3);
+        p5.setoriginalPrice(124.5);
         p5.setProductId(1005);
         p5.setImages(Arrays.asList(new Image("005_syvania_h11.jpg"), new Image("005_syvania_h11.jpg") ));
 
@@ -169,6 +171,7 @@ public class MockData {
                 "Quality assured - motors are tested in laboratory settings to ensure performance<br />" +
                 "Cost effective and reliable - trustworthy manufacturing for far less than same part at the dealership<br />");
         p8.setPrice(164.99);
+        p8.setoriginalPrice(224.30);
         p8.setProductId(1008);
         p8.setImages(Arrays.asList(new Image("008_dorman_oe_solutions.jpg"), new Image("008_dorman_oe_solutions.jpg") ));
 
@@ -202,7 +205,7 @@ public class MockData {
         productDB.put(1008, p8);
         productDB.put(1009, p9);
 
-        bestSellerProducts.put(1003, p3);
+        bestSellerProducts.put(1001, p1);
         bestSellerProducts.put(1004, p4);
         bestSellerProducts.put(1008, p8);
         bestSellerProducts.put(1009, p9);

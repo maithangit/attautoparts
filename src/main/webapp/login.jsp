@@ -4,7 +4,7 @@
 
 <div id="login-area">
     <form action="login" method="post" class="form-login">
-        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <h1 class="h3 mb-3 font-weight-normal">Sign In</h1>
         <label for="inputUsername" class="sr-only">User Name:</label>
 
         <input type="text" id="inputUsername" value="${username}" class="form-control" placeholder="Username" required

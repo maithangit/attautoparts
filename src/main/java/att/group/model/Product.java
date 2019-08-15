@@ -10,6 +10,7 @@ public class Product {
     private String detailInformation;
     private String brand;
     private Double price;
+    private Double originalPrice;
     private List<Image> images;
 
     public int getProductId() {
@@ -59,6 +60,15 @@ public class Product {
     public void setPrice(Double price) {
         this.price = price;
     }
+
+    public Double getoriginalPrice() {
+        return originalPrice;
+    }
+
+    public void setoriginalPrice(Double price) {
+        this.originalPrice = price;
+    }
+
 
     public List<Image> getImages() {
         return images;

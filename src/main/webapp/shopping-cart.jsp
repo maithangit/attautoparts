@@ -29,10 +29,14 @@
                 <tr class="item" id="item_${item.item.productId}">
                     <td><input class="check" type="checkbox" value="${item.item.productId}"></td>
                     <td class="muted center_text"><a href="productdetails?id=${item.item.productId}"><img src="<c:url value="resources/images/${item.item.images[0].url}" />" class="img-thumbnail width100"></a></td>
-                    <td>${item.item.productName}</td>
+                    <td>
+                        <a href="productdetails?id=${item.item.productId}">
+                            ${item.item.productName}
+                        </a>
+                    </td>
                     <td><input class="qty" type="number" placeholder="1" class="input-mini" value="${item.quantity}" min="1" id="quantity_${item.item.productId}"></td>
-                    <td class="price format-money">${item.item.price}</td>
-                    <td class="total format-money">${item.item.price * item.quantity}</td>
+                    <td class="price format-money">$${item.item.price}</td>
+                    <td class="total format-money total-amount">$${item.item.price * item.quantity}</td>
                 </tr>
             </c:forEach>
             <tr>

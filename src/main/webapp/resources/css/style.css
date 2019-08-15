@@ -73,3 +73,22 @@ div.card > a > img {
 .product-image {
     width: 100%;
 }
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+    display: inline;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.total-amount {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.qty {
+    padding: 0.2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}

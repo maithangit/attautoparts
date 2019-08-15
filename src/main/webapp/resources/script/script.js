@@ -41,7 +41,7 @@ $(function () {
     });
 
     $('#btnContinueShopping').click(function () {
-        $(location).attr("href", "/attautoparts");
+        $(location).attr("href", "home");
     });
 
     $('#btnRemove, #btnUpdate').click(function () {

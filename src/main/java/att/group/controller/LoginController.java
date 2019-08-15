@@ -63,7 +63,7 @@ public class LoginController extends HttpServlet {
                 resp.addCookie(cookieUsername);
                 resp.addCookie(cookiePassword);
             }
-            resp.sendRedirect("/");
+            resp.sendRedirect("/attautoparts");
 
         } else {
             req.setAttribute("err_msg", "Incorrect username or password");

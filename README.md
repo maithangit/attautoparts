@@ -1,8 +1,8 @@
-# ATT Autoparts Store
-## Maharishi University of Management
+# Maharishi University of Management
 ## CS472 - Web Application Programming Course Final Project
+## ATT Autoparts Store
 
-#Team Members
-##Hoang Thang Mai
-##Alican Ozer
-##Vinh Tan
+## Team Members
+### Hoang Thang Mai
+### Alican Ozer
+### Vinh Tan

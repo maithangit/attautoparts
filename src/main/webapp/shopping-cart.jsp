@@ -28,7 +28,7 @@
             <c:forEach items="${cartItems}" var="item">
                 <tr class="item" id="item_${item.item.productId}">
                     <td><input class="check" type="checkbox" value="${item.item.productId}"></td>
-                    <td class="muted center_text"><a href="productdetails?id=${item.item.productId}"><img src="<c:url value="../../resources/images/${item.item.images[0].url}" />" class="img-thumbnail width100"></a></td>
+                    <td class="muted center_text"><a href="productdetails?id=${item.item.productId}"><img src="<c:url value="resources/images/${item.item.images[0].url}" />" class="img-thumbnail width100"></a></td>
                     <td>${item.item.productName}</td>
                     <td><input class="qty" type="number" placeholder="1" class="input-mini" value="${item.quantity}" min="1" id="quantity_${item.item.productId}"></td>
                     <td class="price format-money">${item.item.price}</td>
@@ -47,26 +47,21 @@
         </table>
     </div>
     <div class="row shopping-cart">
-        <div class="col-sm-2 left">
-            <button type="button" class="btn btn-danger" id="btnRemove" value="remove">
+        <div class="col-sm-12 text-right">
+            <button type="button" class="btn btn-sml btn-danger" id="btnRemove" value="remove">
                 <span class="fa fa-check-circle"></span> Remove
             </button>
-        </div>
-        <div class="col-sm-2 left">
-            <button type="button" class="btn btn-outline-primary" id="btnUpdate" value="update">
+            <button type="button" class="btn btn-sml btn-outline-primary" id="btnUpdate" value="update">
                 <span class="fa fa-check-circle"></span> Update
             </button>
-        </div>
-        <div class="col-sm-5 right">
-            <button type="button" class="btn btn-info" id="btnContinueShopping">
+            <button type="button" class="btn btn-sml btn-info" id="btnContinueShopping">
                 <span class="fa fa-forward"></span> Continue shopping
             </button>
-        </div>
-        <div class="col-sm-2 right">
-            <button type="button" class="btn btn-primary" id="btnCheckout">
+            <button type="button" class="btn btn-sml btn-primary" id="btnCheckout">
                 <span class="fa fa-calendar"></span> Checkout
             </button>
         </div>
+
     </div>
 </div>
 <jsp:include page="resources/common/footer.jsp"></jsp:include>

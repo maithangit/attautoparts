@@ -2,9 +2,16 @@ body {
     padding-top: 70px;
     font-size: 0.8rem;
 }
+h1 {
+    color: #005656;
+}
 
 h4, h5 {
   font-size: 1.2rem;
+}
+
+.btn {
+    font-size: 0.8rem;
 }
 
 div#login-area {

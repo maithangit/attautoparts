@@ -28,6 +28,7 @@
 </div>
 
 <div id="productTitle"><h1>Best Seller Products</h1></div>
+<div class="container">
 <div class="row">
     <c:forEach items="${bestSeller}" var="product">
         <div class="col-lg-3 col-md-4 col-xs-6 item">
@@ -41,12 +42,12 @@
                     <p class="card-text">${product.briefInformation}</p>
                 </div>
                 <div class="card-footer text-center">
-                    <a href="shopping-cart?id=${product.productId}" class="btn btn-primary btn-lg active addToCart" role="button" aria-pressed="true">Add to cart</a>
+                    <a href="shopping-cart?id=${product.productId}" class="btn btn-primary btn-sml active addToCart" role="button" aria-pressed="true">Add to cart</a>
                 </div>
             </div>
         </div>
     </c:forEach>
 </div>
-
+</div>
 
 <jsp:include page="resources/common/footer.jsp"></jsp:include>

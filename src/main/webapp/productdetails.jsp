@@ -7,7 +7,7 @@
     <div id="productTitle"><h1>Product information</h1></div>
 
     <div class="row shopping-cart">
-        <table class="table table-bordered table-striped">
+        <table class="table table-bordered">
             <thead>
             <tr>
                 <th>Product Name</th>

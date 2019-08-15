@@ -19,7 +19,7 @@
                     <p class="card-text">${product.briefInformation}</p>
                 </div>
                 <div class="card-footer text-center">
-                    <a href="shopping-cart?id=${product.productId}" class="btn btn-primary btn-lg active addToCart" role="button" aria-pressed="true">Add to cart</a>
+                    <a href="shopping-cart?id=${product.productId}" class="btn btn-primary btn-sml active addToCart" role="button" aria-pressed="true">Add to cart</a>
                 </div>
             </div>
         </div>

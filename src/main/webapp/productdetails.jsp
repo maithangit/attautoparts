@@ -22,7 +22,7 @@
                 <td><img src="<c:url value="resources/images/${product.images[0].url}" />" class="product-image"></td>
                 <td>${product.detailInformation}
                     <div class="card-footer text-center">
-                        <a href="shopping-cart?id=${product.productId}" class="btn btn-primary btn-lg active addToCart" role="button" aria-pressed="true">Add to cart</a>
+                        <a href="shopping-cart?id=${product.productId}" class="btn btn-primary btn-sml active addToCart" role="button" aria-pressed="true">Add to cart</a>
                     </div>
                 </td>
                 <td>${product.price}</td>

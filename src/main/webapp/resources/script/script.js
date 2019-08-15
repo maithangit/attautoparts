@@ -20,7 +20,7 @@ $(function () {
                     toastr["error"]("This username is exists.");
                     $("#password").val("");
                 } else {
-                    $(location).attr("href", "/profile");
+                    $(location).attr("href", "profile");
                     toastr["success"](resp.userName + " is created!");
                 }
             })

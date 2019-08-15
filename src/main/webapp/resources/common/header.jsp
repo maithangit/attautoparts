@@ -27,14 +27,14 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top shadow-sm p-3 mb-5">
     <div class="container">
-        <a href="/" class="logo">ATT Auto Parts</a>
+        <a href="/attautoparts" class="logo">ATT Auto Parts</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Home     </a>
+                    <a class="nav-link" href="/attautoparts">Home     </a>
                 </li>
                 <li class="nav-item active">
                     <!--<a href="shopping-cart" class="list-group-item d-flex justify-content-between align-items-center">-->

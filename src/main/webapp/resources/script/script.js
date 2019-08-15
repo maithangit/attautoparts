@@ -27,14 +27,50 @@ $(function () {
 
     $('.addToCart').click(function () {
         /*Alican*/
+        var url = $(this).attr('href');
+        $.post(url).done(function (response) {
+            $("#num-of-items").text(response);
+            toastr["success"]('Product was added successfully! Please check the cart for details.');
+        }).fail(function () {
+            toastr["error"]('Error! Please contact Administrator');
+
+        });
+
+        return false;
     });
 
     $('#btnContinueShopping').click(function () {
-        $(location).attr("href", "/");
+        $(location).attr("href", "/attautoparts");
     });
 
     $('#btnRemove, #btnUpdate').click(function () {
         /*Alican*/
+        let action = $(this).val();
+        let productIds = "";
+        let product = {};
+        let data = {"product": product};
+        $('input[type=checkbox]').each(function () {
+            if (this.checked) {
+                let productId = $(this).val();
+                productIds += productId + ",";
+                product["" + productId] = $("#quantity_" + productId).val();
+
+            }
+        });
+        let url = "shopping-cart?ids=" + productIds + "&action=" + action;
+
+        if (productIds !== "") {
+            $.ajax({
+                url: url,
+                type: 'put',
+                async: false,
+                data: JSON.stringify(product),
+                success: reloadPage,
+                contentType: 'json'
+            });
+        } else {
+            toastr["error"]('Error! Check product(s) first!');
+        }
 
     });
 
@@ -42,12 +78,17 @@ $(function () {
         location.reload();
     }
 
-//     $("#btnCheckout").click(() => {
-//         /*Alican*/
-//
-//     }
-// )
-//     ;
-
-
-})
+    $("#btnCheckout").click(() => {
+        /*Alican*/
+        console.log("checkout click");
+    if ($(".item").length > 0) {
+        $(location).attr("href", "checkout");
+        $("#num-of-items").text(0);
+    } else {
+        $("#alertBody").html("Please add item in your cart before doing checkout.")
+        $("#myModal").modal("show");
+    }
+}
+)
+    ;
+});

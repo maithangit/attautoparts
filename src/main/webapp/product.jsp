@@ -5,6 +5,7 @@
 <jsp:include page="resources/common/header.jsp"></jsp:include>
 
 <div id="productTitle"><h1>New Products</h1></div>
+<div class="container">
 <div class="row">
     <c:forEach items="${newProducts}" var="product">
         <div class="col-lg-3 col-md-4 col-xs-6 item">
@@ -23,6 +24,7 @@
             </div>
         </div>
     </c:forEach>
+</div>
 </div>
 
 <div id="productTitle"><h1>Best Seller Products</h1></div>

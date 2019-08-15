@@ -25,13 +25,14 @@
 </div>
 
 <!-- Bootstrap core JavaScript -->
-<script src="<c:url value="../script/jquery.min.js" />"></script>
-<script src="<c:url value="../script/bootstrap.bundle.min.js"/>"></script>
-<script src="<c:url value="../script/script.js"/>"></script>
-<script src="<c:url value="../script/toastr.js"/>"></script>
+<script src="<c:url value="/resources/script/jquery.min.js" />"></script>
+<script src="<c:url value="/resources/script/bootstrap.bundle.min.js"/>"></script>
+<script src="<c:url value="/resources/script/script.js"/>"></script>
+<script src="<c:url value="/resources/script/toastr.js"/>"></script>
+
 
 <c:if test="${pageContext.request.servletPath.contains(\"checkout\")}">
-    <script src="<c:url value="../script/checkout.js"/>"></script>
+    <script src="<c:url value="/resources/script/checkout.js"/>"></script>
 </c:if>
 
 </body>

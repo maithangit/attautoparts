@@ -1,6 +1,12 @@
 body {
     padding-top: 70px;
+    font-size: 0.8rem;
 }
+
+h4, h5 {
+  font-size: 1.2rem;
+}
+
 div#login-area {
     display: -ms-flexbox;
     display: flex;

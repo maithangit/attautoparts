@@ -42,11 +42,12 @@ $(function () {
         location.reload();
     }
 
-    $("#btnCheckout").click(() = > {
-        /*Alican*/
-    }
-)
-    ;
+//     $("#btnCheckout").click(() => {
+//         /*Alican*/
+//
+//     }
+// )
+//     ;
 
 
 })

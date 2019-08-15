@@ -34,7 +34,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Home     </a>
+                    <a class="nav-link" href="/attautoparts">Home     </a>
                 </li>
                 <li class="nav-item active">
                     <!--<a href="shopping-cart" class="list-group-item d-flex justify-content-between align-items-center">-->

@@ -1,3 +1,4 @@
+"use strict";
 $(function () {
 
     $("#btnRegister").click(register);
@@ -68,8 +69,8 @@ $(function () {
                 success: reloadPage,
                 contentType: 'json'
             });
-        }else{
-            toastr["error"]('Error! Check product(s) first!');
+        } else {
+            toastr["error"]('Error! Select product(s) first!');
         }
 
     });

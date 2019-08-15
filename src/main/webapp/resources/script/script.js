@@ -68,7 +68,11 @@ $(function () {
                 success: reloadPage,
                 contentType: 'json'
             });
+<<<<<<< HEAD
         } else {
+=======
+        }else{
+>>>>>>> d3cb89409d8a7ff205ca9e9ae9f37721d1312281
             toastr["error"]('Error! Check product(s) first!');
         }
 
@@ -79,16 +83,16 @@ $(function () {
     }
 
     $("#btnCheckout").click(() => {
-        /*Alican*/
-        console.log("checkout click");
-    if ($(".item").length > 0) {
-        $(location).attr("href", "checkout");
-        $("#num-of-items").text(0);
-    } else {
-        $("#alertBody").html("Please add item in your cart before doing checkout.")
-        $("#myModal").modal("show");
-    }
-}
-)
-    ;
+
+            /*Alican*/
+            console.log("checkout click");
+            if ($(".item").length > 0) {
+                $(location).attr("href", "checkout");
+                $("#num-of-items").text(0);
+            } else {
+                $("#alertBody").html("Please add item in your cart before doing checkout.")
+                $("#myModal").modal("show");
+            }
+        }
+    );
 });

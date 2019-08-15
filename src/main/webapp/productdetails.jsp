@@ -4,32 +4,21 @@
 
 <div class="container">
 
-    <div id="productTitle"><h1>Product information</h1></div>
+    <div id="productTitle"><h1>${product.productName}</h1></div>
 
     <div class="row shopping-cart">
-        <table class="table table-bordered">
-            <thead>
-            <tr>
-                <td>Product Name</td>
-                <td>Images</td>
-                <td>Detail Information</td>
-                <td>Price</td>
-            </tr>
-            </thead>
-            <tbody id="tblproductdetails">
-            <tr class="item">
-                <td>${product.productName}</td>
-                <td><img src="<c:url value="resources/images/${product.images[0].url}" />" class="product-image"></td>
-                <td>${product.detailInformation}
-                    <div class="card-footer text-center">
-                        <a href="shopping-cart?id=${product.productId}" class="btn btn-primary btn-sml active addToCart" role="button" aria-pressed="true">Add to cart</a>
-                    </div>
-                </td>
-                <td>${product.price}</td>
-            </tr>
-
-            </tbody>
-        </table>
+        <div class="col-lg-2 col-md-4 col-xs-6 item">
+            <img src="<c:url value="resources/images/${product.images[0].url}" />" class="product-image" />
+        </div>
+        <div class="col-lg-10 col-md-4 col-xs-6 item">
+            <h5>$${product.price}</h5>
+            <div>
+                ${product.detailInformation}
+            </div>
+            <div class="text-left">
+                <a href="shopping-cart?id=${product.productId}" class="btn btn-primary btn-sml active addToCart" role="button" aria-pressed="true">Add to cart</a>
+            </div>
+        </div>
 
     </div>
 </div>

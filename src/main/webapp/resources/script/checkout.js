@@ -4,7 +4,7 @@
 $(function(){
     var success = false;
     $(".payment-form").submit( (e) => {
-        console.log(e);
+        //console.log(e);
         e.preventDefault();
         var order = {};
         order.fullName = $("#fullName").val();
@@ -12,7 +12,7 @@ $(function(){
         order.paymentMethod = $("[name='payment']:checked").val();
         order.comment = $("#comment").val();
 
-        console.log("order", order);
+        //console.log("order", order);
 
         $.post("checkout", {
             order: JSON.stringify(order)
@@ -28,16 +28,16 @@ $(function(){
             $("#alertBody").html("There are some errors from our system. Please try again.")
             $("#myModal").modal("show");
         }
-        console.log(data);
+        //console.log(data);
     }
 
     function error(err) {
-        console.log(err);
+        //console.log(err);
         success = false;
     }
 
     $('#myModal').on('hidden.bs.modal', function (e) {
-        console.log("Hide");
+        //console.log("Hide");
         if(success) {
             $(location).attr("href", "/");
         }

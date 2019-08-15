@@ -68,6 +68,8 @@ $(function () {
                 success: reloadPage,
                 contentType: 'json'
             });
+        }else{
+            toastr["error"]('Error! Check product(s) first!');
         }
 
     });

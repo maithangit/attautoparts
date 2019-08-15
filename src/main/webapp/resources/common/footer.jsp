@@ -30,6 +30,7 @@
 <script src="<c:url value="/resources/script/script.js"/>"></script>
 <script src="<c:url value="/resources/script/toastr.js"/>"></script>
 
+
 <c:if test="${pageContext.request.servletPath.contains(\"checkout\")}">
     <script src="<c:url value="/resources/script/checkout.js"/>"></script>
 </c:if>

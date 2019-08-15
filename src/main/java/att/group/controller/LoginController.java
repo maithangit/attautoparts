@@ -63,7 +63,8 @@ public class LoginController extends HttpServlet {
                 resp.addCookie(cookieUsername);
                 resp.addCookie(cookiePassword);
             }
-            resp.sendRedirect("/");
+
+            resp.sendRedirect("home");
 
         } else {
             req.setAttribute("err_msg", "Incorrect username or password");

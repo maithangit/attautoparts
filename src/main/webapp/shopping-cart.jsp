@@ -61,7 +61,6 @@
                 <span class="fa fa-calendar"></span> Checkout
             </button>
         </div>
-
     </div>
 </div>
 <jsp:include page="resources/common/footer.jsp"></jsp:include>

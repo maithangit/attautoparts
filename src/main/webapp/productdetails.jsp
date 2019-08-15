@@ -10,10 +10,10 @@
         <table class="table table-bordered">
             <thead>
             <tr>
-                <th>Product Name</th>
-                <th>Images</th>
-                <th>Detail Information</th>
-                <th>Price</th>
+                <td>Product Name</td>
+                <td>Images</td>
+                <td>Detail Information</td>
+                <td>Price</td>
             </tr>
             </thead>
             <tbody id="tblproductdetails">

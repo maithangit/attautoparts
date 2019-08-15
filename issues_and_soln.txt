@@ -1,0 +1,20 @@
+Intelij doesn't understand maven project
+1. Open intelij, select import project
+2. select the pom.xml file in the project target folder 
+3. Check "Import Maven Projects automatically" in the window "Import project from maven"
+
+/******************************************************************************/
+
+HTTP Status 500 - java.lang.ClassNotFoundException: org.apache.jsp.index_jsp
+1.Download jstl-1.2.jar and standard-1.1.2.jar from below links.
+
+http://repo2.maven.org/maven2/javax/servlet/jstl/
+
+http://repo2.maven.org/maven2/taglibs/standard/
+
+2.Copy the two files into Tomcat lib folder.
+
+3.Rename standard-1.1.2.jar to standard.jar.
+
+
+/******************************************************************************/

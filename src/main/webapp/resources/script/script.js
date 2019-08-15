@@ -69,7 +69,7 @@ $(function () {
                 contentType: 'json'
             });
         }else{
-            toastr["error"]('Error! Check product(s) first!');
+            toastr["error"]('Error! Select product(s) first!');
         }
 
     });
